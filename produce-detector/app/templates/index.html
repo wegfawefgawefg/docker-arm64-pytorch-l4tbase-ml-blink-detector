@@ -1,0 +1,16 @@
+<html>
+      <head>
+        <title>Routes</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <div id="myClass"><p>0</p></div>
+    </body>
+    <script>
+        function countup(){
+            var element = document.getElementById("myClass");
+            element.innerText = (parseInt(element.innerText) + 1.0).toString();
+        }
+        setInterval(countup, 500);
+    </script>
+</html> 
